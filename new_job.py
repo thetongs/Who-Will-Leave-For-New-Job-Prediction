@@ -12,11 +12,11 @@ import matplotlib.pyplot as plt
 
 ## Load training data and testing dataset
 #
-dataset_train = pd.read_csv('dataset/aug_train.csv')
+dataset_train = pd.read_csv('aug_train.csv')
 column_name = list(dataset_train.columns)
 
 print("Training size : {}".format(len(dataset_train)))
-dataset_test = pd.read_csv('dataset/aug_test.csv')
+dataset_test = pd.read_csv('aug_test.csv')
 dataset_train = dataset_train.append(dataset_test, ignore_index = True)
 
 # See 5 rows
@@ -43,11 +43,11 @@ dataset_train.head()
 
 # Load training data
 #
-dataset_train = pd.read_csv('dataset/aug_train.csv')
+dataset_train = pd.read_csv('aug_train.csv')
 column_name = list(dataset_train.columns)
 
 print("Training size : {}".format(len(dataset_train)))
-dataset_test = pd.read_csv('dataset/aug_test.csv')
+dataset_test = pd.read_csv('aug_test.csv')
 dataset_train = dataset_train.append(dataset_test, ignore_index = True)
 
 # Using SimpleImputer
